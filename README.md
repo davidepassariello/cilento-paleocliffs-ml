@@ -47,7 +47,7 @@ I independently developed the **entire Python analysis pipeline**, including dat
 
 ## Collaboration and attribution
 
-University group project prepared with Ottavia Bozzetto, Maria Maddalena Panico, Silvana Pecoraro and Ciro Romano. Python implementation by Davide Passariello; GIS and presentation work developed collaboratively.
+University group project. Python implementation by Davide Passariello; GIS and presentation work developed collaboratively.
 
 ## Project status
 
