@@ -36,6 +36,14 @@ The following confusion matrices compare the performance of the Random Forest an
 
 *Confusion matrices from the original academic project presentation.*
 
+### ROC Curve Comparison
+
+The ROC curves illustrate the discriminative performance of the two classifiers on the held-out test set. Random Forest achieved a reported AUC of 0.998, compared with 0.981 for SVM.
+
+![ROC curves comparing Random Forest and SVM](images/roc_curve_comparison.png)
+
+*ROC curves from the original academic project; results are based on a random train/test split rather than independent spatial validation.*
+
 ### Geospatial Prediction Maps
 
 The Random Forest model was applied to the study area's geospatial dataset to estimate palaeocliff probabilities. The resulting predictions were exported and visualized in QGIS.
