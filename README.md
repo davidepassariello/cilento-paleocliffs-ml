@@ -59,13 +59,16 @@ The Random Forest model was applied to the study area's geospatial dataset to es
 - `requirements.txt`: Python packages used.
 - `dataset_finale.csv`: **not included** due to its large size (~90 MB); needed for whole-area predictions and GIS export.
 
-## How to run
+## Running the notebook
 
-1. Open `paleocliffs_analysis.ipynb` in Google Colab or Jupyter.
-2. Make `dataset_training.csv` available in the notebook working directory.
-3. If authorized to access the original prediction dataset, place `dataset_finale.csv` in the same directory. It must use `;` delimiters and comma decimals, and include coordinate columns `x` and `y`.
-4. Install the packages listed in `requirements.txt` (in Colab, most are already installed).
-5. Run the notebook cells in order.
+1. Download `paleocliffs_analysis.ipynb` and `dataset_training.csv` into the same folder, or open the notebook in Google Colab and upload the CSV to the session files.
+2. Install the packages listed in `requirements.txt` (Google Colab typically already includes most of them).
+3. Run the cells in order. Training, evaluation, confusion matrices and ROC curves work without the large geospatial dataset.
+4. **Optional:** To export full-area predictions for QGIS, place `dataset_finale.csv` alongside the notebook and rerun it from the beginning. The notebook writes `mappa_predizioni_RF.csv` and `mappa_predizioni_SVM.csv`.
+
+**Data availability:** The large `dataset_finale.csv` is not included in this repository. The published notebook can be used for training and evaluation without it. The geospatial export requires access to the original dataset.
+
+**Validation limitation:** Reported metrics use a random stratified train/test split. Neighbouring geographic observations may be correlated, so these scores must not be interpreted as independent spatial generalization performance.
 
 **Note:** In Google Colab, upload the files into the session or adapt the file paths to Google Drive. The notebook as provided needs `dataset_finale.csv` even to complete its initial data-loading cell; without it, the full notebook cannot run as-is.
 
