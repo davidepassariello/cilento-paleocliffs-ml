@@ -36,6 +36,14 @@ The following confusion matrices compare the performance of the Random Forest an
 
 *Confusion matrices from the original academic project presentation.*
 
+### Geospatial Prediction Maps
+
+The Random Forest model was applied to the study area's geospatial dataset to estimate palaeocliff probabilities. The resulting predictions were exported and visualized in QGIS.
+
+![Random Forest palaeocliff prediction maps](images/random_forest_qgis_maps.png)
+
+*Geospatial visualization of Random Forest predictions along the Cilento coast.*
+
 ## Files
 
 - `paleocliffs_analysis.ipynb`: analysis and modelling notebook (original code with a small non-destructive fix to the target-column selection).
