@@ -1,0 +1,23 @@
+# Python cache
+__pycache__/
+*.py[cod]
+
+# Local environments
+.venv/
+venv/
+
+# Local configuration
+.env
+.env.*
+
+# Large local data and generated predictions
+dataset_finale.csv
+dataset_finaleDEF.csv
+mappa_predizioni_*.csv
+
+# Jupyter checkpoints
+.ipynb_checkpoints/
+
+# System files
+.DS_Store
+Thumbs.db
