@@ -28,6 +28,14 @@ I independently developed the **entire Python analysis pipeline**, including dat
 
 *Values are from the original university presentation/notebook outputs, not an independently re-executed benchmark. A random train/test split on geospatial data may overestimate performance on geographically independent regions.*
 
+### Confusion Matrices
+
+The following confusion matrices compare the performance of the Random Forest and SVM classifiers on the held-out test set.
+
+![Confusion matrices comparing Random Forest and SVM](images/model_confusion_matrices.png)
+
+*Confusion matrices from the original academic project presentation.*
+
 ## Files
 
 - `paleocliffs_analysis.ipynb`: analysis and modelling notebook (original code with a small non-destructive fix to the target-column selection).
